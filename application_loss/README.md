@@ -41,4 +41,4 @@ orders_info_short.csv — информацию о заказах,
 - какие факторы мешают привлечению клиентов.  
 
 ## Используемые библиотеки
-*Pandas*, *Matplotlib*
+*Pandas*, *Matplotlib*, *Seaborn*
