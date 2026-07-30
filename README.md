@@ -1,18 +1,45 @@
-# Проекты по программе "Аналитик данных" от Яндекс.Практикум
+# Data Analyst portfolio — Yandex.Praktikum
 
+Thirteen projects from the Yandex.Praktikum Data Analyst program, in the order they were
+completed. The progression is deliberate: from data cleaning with pandas, through
+statistical hypothesis testing and SQL, to cohort economics, A/B analysis and a deployed
+dashboard.
 
-| Название проекта | Описание | Используемые библиотеки | 
-| :---------------------- | :---------------------- | :---------------------- |
-| [Исследование данных сервиса “Яндекс.Музыка” — сравнение пользователей двух городов](big_cities_music) | На реальных данных Яндекс.Музыки c помощью библиотеки Pandas и её возможностей проверить данные и сравнить поведение и предпочтения пользователей двух столиц — Москвы и Санкт-Петербурга.| *python*, *pandas* |
-| [Исследование надёжности заёмщиков — анализ банковских данных](banks) | На основе данных кредитного отдела банка исследовать влияние семейного положения и количества детей на факт погашения кредита в срок.| *python*, *pandas* |
-| [Продажа квартир в Санкт-Петербурге — анализ рынка недвижимости](apartment_spb) | На основе данных сервиса Яндекс.Недвижимость определить рыночну стоимость объектов недвижимости разного типа, типичные параметры квартир, в зависимости от удаленности от центра.| *python*, *pandas*, *Matplotlib* |
-| [Определение выгодного тарифа для телеком компании](telecom_tarif) | Провеcти предварительный анализ использования тарифов на выборке клиентов, проанализировать поведение клиентов при использовании услуг оператора и составить рекомендацию оптимального набора услуг для пользователей. Провести предобработку данных, их анализ. Проверить гипотезы о различии выручки абонентов разных тарифов и различии выручки абонентов из Москвы и других регионов.| *python*, *pandas*, *Matplotlib*, *NumPy*, *SciPy* |
-| [Сборный проект 1. Изучение закономерностей, определяющих успешность игр](games_succes) | Выявить параметры, определяющие успешность игр в разных регионах мира. На основании этого подготовить отчет для магазина компьютерных игр для планирования рекламных кампаний. Провести предобработку данных, анализ. Выбрать актуальный период для анализа. Составить портреты пользователей каждого региона. Проверить гипотезы.| *python*, *pandas*, *Matplotlib*, *NumPy* |
-| [Исследование данных об инвестиции венчурных фондов в компании-стартапы](venture_fund) | Работа с базой данных, которая хранит информацию о венчурных фондах и инвестициях в компании-стартапе, используя язык запросов SQL.| *SQL*, *PostgreSQL* |
-| [Анализ убытков приложения ProcrastinatePRO+](application_loss) | Провести анализ данных от ProcrastinatePRO+. Рассчитать различные метрики, использовав когортный анализ: LTV, CAC, Retention rate, DAU, WAU, MAU и т.д. Сделать выводы по полученным данным.| *python*, *pandas*, *Matplotlib*, *Seaborn* |
-| [Исследование данных от StackOverflow](stackoverflow) | Работа с базой данных, которая хранит информацию о хранятся данные о постах за 2008 год, используя язык запросов SQL.| *SQL*, *PostgreSQL* |
-| [Проверка гипотез по увеличению выручки в интернет-магазине — оценить результаты A/B теста](revenue_store) | Провести приоритизацию гипотез по фреймворкам ICE и RICE. Затем провести анализ результатов A/B-теста, построить графики кумулятивной выручки, среднего чека, конверсии по группам, а затем посчитать статистическую значимость различий конверсий и средних чеков по сырым и очищенным данным.| *python*, *pandas*, *Matplotlib*, *SciPy* |
-| [Исследования рынка общепита в Москве для принятия решения об открытии нового заведения](catering_market) | Исследовать рынок общественного питания на основе открытых данных, подготовить презентации для инвесторов. | *python*, *pandas*, *Seaborn*, *Plotly* |
-| [Сборный проект - 2. Анализ пользовательского поведения в мобильном приложении](mobile_app) | На основе данных использования мобильного приложения для продажи продуктов питания проанализировать воронку продаж, исследоваnm путь пользователей до покупки, а также оценить результаты A/A/B-тестирования | *python*, *pandas*, *Matplotlib*, *Seaborn*, *Plotly* |
-| [Создание дашборда по пользовательским событиям для агрегатора новостей](dashboard_event) | Запустить удаленную машину в сервисе Yandex.Cloud. Установить PostgreSQL, развернуть базу данных ЯндексДзена. Затем написать скрипт пайплайна, скрипт дашборда и запустить его на удаленной машине. По результатам подготовить презентацию с полученными графиками | *python*, *SQLAlchemy*, *PostgreSQL*, *dash*, *Tableau* |
-| [ Выпускной проект: SQL, A/B, Исследование, Презентация](graduation_project) | Проанализировать клиентов регионального банка и выделить сегменты клиентов, которые склонны уходить из банка, выполнить задания по A/B-тестированию и SQL| *python*, *pandas*, *Matplotlib*, *Seaborn*, *SciPy*, *SQL*, *PostgreSQL*|
+Every notebook keeps its outputs — charts and tables render directly on GitHub, no need to
+run anything. **The notebooks themselves are written in Russian**; this README is the map.
+
+## Projects
+
+| Project | Question it answers | Stack |
+| --- | --- | --- |
+| [big_cities_music](big_cities_music) | Do Moscow and St. Petersburg listen to different music, and at different hours? Real Yandex.Music data. | pandas |
+| [banks](banks) | Do marital status and number of children affect whether a borrower repays on time? Bank credit-department data. | pandas |
+| [apartment_spb](apartment_spb) | What drives apartment prices in St. Petersburg, and how do typical parameters change with distance from the centre? | pandas, Matplotlib |
+| [telecom_tarif](telecom_tarif) | Which of two telecom plans earns more? Includes hypothesis tests on revenue between plans and between Moscow and the regions. | pandas, NumPy, SciPy, Matplotlib |
+| [games_succes](games_succes) | What makes a video game succeed, and how does that differ by region? Regional user portraits and hypothesis tests, for ad-campaign planning. | pandas, NumPy, Matplotlib |
+| [venture_fund](venture_fund) | Venture funds and their startup investments — queried straight from the database. | SQL, PostgreSQL |
+| [application_loss](application_loss) | Why is ProcrastinatePRO+ losing money? Cohort analysis: LTV, CAC, ROI, retention, DAU/WAU/MAU. | pandas, Matplotlib, Seaborn |
+| [stackoverflow](stackoverflow) | StackOverflow posts from 2008, analysed in pure SQL. | SQL, PostgreSQL |
+| [revenue_store](revenue_store) | Which growth hypotheses to run, and did the A/B test win? ICE/RICE prioritisation, cumulative revenue and conversion curves, significance on raw and cleaned data. | pandas, SciPy, Matplotlib |
+| [catering_market](catering_market) | Where should a new restaurant open in Moscow? Open-data market study, presented for investors. | pandas, Seaborn, Plotly |
+| [mobile_app](mobile_app) | Where do users drop out of a food-delivery app? Sales funnel, path to purchase, A/A/B test results. | pandas, Matplotlib, Seaborn, Plotly |
+| [dashboard_event](dashboard_event) | A live dashboard on user events for a news aggregator — machine provisioned on Yandex.Cloud, PostgreSQL deployed, pipeline and dashboard scripts running remotely. | SQLAlchemy, PostgreSQL, Dash, Tableau |
+| [graduation_project](graduation_project) | **Capstone.** Which segments of a regional bank's customers are about to churn? Segmentation, plus A/B testing and SQL assignments. | pandas, SciPy, Matplotlib, Seaborn, SQL, PostgreSQL |
+
+## What this covers
+
+**Analysis** — exploratory data analysis, cleaning and preprocessing, segmentation, cohort
+analysis and unit economics (LTV, CAC, ROI, retention).
+
+**Statistics** — hypothesis testing, A/B and A/A/B test design and evaluation, statistical
+significance on raw versus cleaned data.
+
+**SQL** — aggregation, joins and window functions against PostgreSQL, both as the analysis
+tool itself and as the source layer.
+
+**Delivery** — charts and dashboards (Matplotlib, Seaborn, Plotly, Dash, Tableau), plus
+investor- and stakeholder-facing presentations.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
