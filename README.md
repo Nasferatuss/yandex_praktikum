@@ -6,7 +6,9 @@ statistical hypothesis testing and SQL, to cohort economics, A/B analysis and a 
 dashboard.
 
 Every notebook keeps its outputs — charts and tables render directly on GitHub, no need to
-run anything. **The notebooks themselves are written in Russian**; this README is the map.
+run anything, which is just as well: the data lives in the Praktikum sandbox at `/datasets/`
+and is not redistributable. **The notebooks themselves are written in Russian**; this README
+is the map.
 
 ## Projects
 
@@ -23,7 +25,7 @@ run anything. **The notebooks themselves are written in Russian**; this README i
 | [revenue_store](revenue_store) | Which growth hypotheses to run, and did the A/B test win? ICE/RICE prioritisation, cumulative revenue and conversion curves, significance on raw and cleaned data. | pandas, SciPy, Matplotlib |
 | [catering_market](catering_market) | Where should a new restaurant open in Moscow? Open-data market study, presented for investors. | pandas, Seaborn, Plotly |
 | [mobile_app](mobile_app) | Where do users drop out of a food-delivery app? Sales funnel, path to purchase, A/A/B test results. | pandas, Matplotlib, Seaborn, Plotly |
-| [dashboard_event](dashboard_event) | A live dashboard on user events for a news aggregator — machine provisioned on Yandex.Cloud, PostgreSQL deployed, pipeline and dashboard scripts running remotely. | SQLAlchemy, PostgreSQL, Dash, Tableau |
+| [dashboard_event](dashboard_event) | A dashboard on user events for a news aggregator. Built on a provisioned Yandex.Cloud VM: PostgreSQL deployed, a cron'd collection pipeline, a filtered Dash app. The VM is gone — what is here is the [published dashboard](https://public.tableau.com/app/profile/maxim1170/viz/My_First_Viz_16694721975350/_?publish=yes) and the deck, not code. | SQLAlchemy, PostgreSQL, Dash, Tableau |
 | [graduation_project](graduation_project) | **Capstone.** Which segments of a regional bank's customers are about to churn? Segmentation, plus A/B testing and SQL assignments. | pandas, SciPy, Matplotlib, Seaborn, SQL, PostgreSQL |
 
 ## What this covers
